@@ -1,4 +1,5 @@
 import React from "react";
+import "./MemberCard.css";
 
 const MemberCard = props => {
   return (
