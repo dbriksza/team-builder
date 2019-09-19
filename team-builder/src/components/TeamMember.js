@@ -41,13 +41,18 @@ const Member = props => {
         value={member.email}
       />
       <label htmlFor="role">Role</label>
-      <input
+      <select
         id="role"
-        type="text"
         name="role"
         onChange={handleChanges}
         value={member.role}
-      />
+      >
+        <option value="pickdammit">Select an option...</option>
+        <option value="frontend">Front End</option>
+        <option value="backend">Back End</option>
+        <option value="nerd">Nerd</option>
+        <option value="ui">UI</option>
+      </select>
       <button type="submit">Add Member</button>
     </form>
   );
