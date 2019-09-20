@@ -8,10 +8,6 @@ const Member = props => {
     role: ""
   });
   const handleChanges = event => {
-    //     const ourObj = {...note}
-    // ourObj[event.target.name] = event.target.value
-    // // and then we would setNote to that ^
-    // setNote(ourObj);
     setMember({ ...member, [event.target.name]: event.target.value });
     console.log(member);
   };
